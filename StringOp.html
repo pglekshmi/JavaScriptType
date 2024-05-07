@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    The length of string is:
+    <p id="demo"></p>
+    The character at position 2 is:
+    <p id="demo1"></p>
+    The second word is:
+    <p id="demo2"></p>
+    To Uppercase:
+    <p id="demo3"></p>
+    To Lowercase:
+    <p id="demo4"></p>
+    Concat 2 strings:
+    <p id="demo5"></p>
+    Repeat String:
+    <p id="demo6"></p>
+    Replace:
+    <p id="demo7"></p>
+    Where is icecream:
+    <p id="demo8"></p>
+    My name is:
+    <p id="demo9"></p>
+    Division:
+    <p id="demo10"></p>
+    <script>
+        let x= "Mowgli is the human character in Jungle Book."
+        document.getElementById("demo").innerHTML=x.length;
+        document.getElementById("demo1").innerHTML=x.charAt(2);
+        document.getElementById("demo2").innerHTML=x.at(2);
+        document.getElementById("demo3").innerHTML=x.toUpperCase();
+        document.getElementById("demo4").innerHTML=x.toLowerCase();
+        let y= "New";
+        y= y.concat(" ","Year");
+        document.getElementById("demo5").innerHTML=y;
+        let z="How do you do?";
+        document.getElementById("demo6").innerHTML=z.repeat(5);
+        let l="I like icecreams and i like to sleep";
+        document.getElementById("demo7").innerHTML=l.replace(/like/g,"don't like");
+        document.getElementById("demo8").innerHTML=l.search(/icecreams/g);
+        let fName="Pranith";
+        let lName="Krishna";
+        let name = fName+lName
+        document.getElementById("demo9").innerHTML=name;
+        let m=10/"Apple";
+        document.getElementById("demo10").innerHTML=m;
+        
+    </script>
+    </script>
+</body>
+</html>

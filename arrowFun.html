@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the first element:
+    <input type="text" id="text1">
+    Enter the second element:
+    <input type="text" id="text2">
+    <button onclick="addNum()">The sum is:</button>
+    <p id="demo"></p>
+    <script>
+        let  addNum=()=>{
+         let x =Number.parseInt(document.getElementById("text1").value);
+        let y =Number.parseInt(document.getElementById("text2").value);
+       
+        document.getElementById("demo").innerHTML= addV(x,y);}
+        
+        let addV = (x,y)=> x+y; 
+
+        
+        
+    </script>
+</body>
+</html>

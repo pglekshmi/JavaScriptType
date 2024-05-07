@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Full name:
+    <p id="demo"></p>
+    <script>
+        let person={
+            fname:"Lekshmi",
+            lname:"P G",
+            place:"pattom",
+            fName:function(){this.fname+" "+this.lname} 
+        }
+       document.getElementById("demo").innerHTML=person.fName;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    The sum is:
+    <p id="demo"></p>
+    The type is:
+    <p id="demo1"></p>
+    The size of text is:
+    <p id="demo2"></p>
+    The text is:
+    <p id="demo3"></p>
+    The text is:
+    <p id="demo4"></p>
+    The text is:
+    <p id="demo5"></p>
+    <script>
+        let x=5;
+        let y="text";
+        let z= x+y;
+        let l="Hello How are you?";
+        let s=`My BestFriend's name is "Meenu"`;
+        let t="My BestFriend's name is \"Meenu\"";
+        let u="it\'s going to be ok"
+        document.getElementById("demo").innerHTML=z;
+        document.getElementById("demo1").innerHTML=typeof z;
+        document.getElementById("demo2").innerHTML=l.length;
+        document.getElementById("demo3").innerHTML=s;
+        document.getElementById("demo4").innerHTML=t;
+        document.getElementById("demo5").innerHTML=u;
+
+    </script>
+   
+</body>
+</html>

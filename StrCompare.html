@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    Comparison result   is:
+    <p id="demo"></p>
+    Comparison result   is:
+    <p id="demo1"></p>
+
+    Comparison result   is:
+    <p id="demo2"></p>
+    The type of b is:
+    <p id="demo3"></p>
+   
+    <script>
+        let x="welcome";
+        let y="welcome";
+        let z= x==y;
+        document.getElementById("demo").innerHTML=z;
+        let u="welcome";
+        let v= new String("welcome");
+        let w = u==v;
+        document.getElementById("demo1").innerHTML=w;
+        let a="welcome";
+        let b= new String("welcome");
+        let c = a===b;
+        document.getElementById("demo2").innerHTML=c;
+        document.getElementById("demo3").innerHTML=typeof b;
+        
+    </script>
+   
+</body>
+</html>

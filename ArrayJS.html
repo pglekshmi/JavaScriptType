@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    The cars:
+    <p id="demo"></p>
+    The length of the array:
+    <p id="demo1"></p>
+    The new list:
+    <p id="demo2"></p>
+    The new list:
+    <p id="demo3"></p>
+    The fruits list is:
+    <p id="demo4"></p>
+    The type of cars:
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    Attach &:
+    <p id="demo7"></p>
+    My Car:
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    My Dream car:
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    Updated cars:
+    <p id="demo12"></p>
+    The car at position1:
+    <p id="demo13"></p>
+    My status:
+    <p id="demo14"></p>
+    My Fav candy:
+    <p id="demo15"></p>
+    Sachu's favourite:
+    <p id="demo16"> </p>
+    String Candy:
+    <p id="demo17"></p>
+    The third chara in string:
+    <p id="demo18"></p>
+    <script>
+        const cars=["Maruthi","Hundai","MG"];
+        document.getElementById("demo").innerHTML=cars;
+        document.getElementById("demo1").innerHTML=cars.length;
+        cars.push("Tata");
+        document.getElementById("demo2").innerHTML=cars;
+        cars[4]="Renault";
+        document.getElementById("demo3").innerHTML=cars;
+        const fruits=[];
+        fruits[0]="apple";
+        document.getElementById("demo4").innerHTML=fruits;
+        document.getElementById("demo5").innerHTML=typeof cars;
+        document.getElementById("demo6").innerHTML=Array.isArray(cars);
+        document.getElementById("demo4").innerHTML=fruits;
+        document.getElementById("demo7").innerHTML=cars.join("&");
+        let mycar= cars.pop();
+        document.getElementById("demo8").innerHTML=mycar;
+        document.getElementById("demo9").innerHTML=cars;
+        document.getElementById("demo10").innerHTML=cars.shift();
+        document.getElementById("demo11").innerHTML=cars;
+        delete(cars[1]);
+        document.getElementById("demo12").innerHTML=cars;
+        document.getElementById("demo13").innerHTML=cars[1];
+        let status1=["how","are","you?"];
+        let status=["i","am","fine"];
+        document.getElementById("demo14").innerHTML=status1.concat(status);
+        let candy=["candyman","kopoiko","kaccha mango","mango bite","jingo"];
+        let myfav=candy.slice(1);
+        document.getElementById("demo15").innerHTML=myfav;
+        let sachufav= candy.slice(1,3);
+        document.getElementById("demo16").innerHTML=sachufav;
+        let candyString=candy.toString();
+        document.getElementById("demo17").innerHTML=candyString;
+        document.getElementById("demo18").innerHTML=candyString[8];
+    </script>
+</body>
+</html>
