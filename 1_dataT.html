@@ -7,16 +7,20 @@
    
 </head>
 <body>
-   
-    <button id="submit">Submit</button>
+   View the result here:
+    <p id="submit">Submit</p>
     <script>
         let x="hi";
+        let v='hi';
+        // document.getElementById("submit").innerHTML=typeof v;
         let x1=3.14;
         let d=true;
         let y = typeof x;
         let a= 5;
+        // document.getElementById("submit").innerHTML=typeof x1;
         let b=6;
         let c=a+b;
+        // document.getElementById("submit").innerHTML=typeof c;
         const person={
             firstName:"Lekshmi",
             lastName:"PG",
@@ -25,9 +29,18 @@
         const fruits=["apple","orange","watermelon"];
         console.log(y);
         const date = new Date("2024-03-20");
+        let k;
+        // document.getElementById("submit").innerHTML= k;
+        // document.getElementById("submit").innerHTML=typeof k;
+
+        let l=null;
+        document.getElementById("submit").innerHTML= l;
+        document.getElementById("submit").innerHTML= typeof l;
+
         let z=16+"years";
         let z1="years"+16;
         let z2= 16+4+"years";
+
         // document.getElementById("submit").innerHTML=typeof person;
         // document.getElementById("submit").innerHTML=person.firstName;
         // document.getElementById("submit").innerHTML=fruits[1];
@@ -35,7 +48,7 @@
         // document.getElementById("submit").innerHTML=date;
         // document.getElementById("submit").innerHTML=typeof date;
         // document.getElementById("submit").innerHTML=z2;
-        document.getElementById("submit").innerHTML=typeof x1;
+        // document.getElementById("submit").innerHTML=typeof x1;
     </script>
 </body>
 </html>

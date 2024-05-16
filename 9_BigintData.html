@@ -7,13 +7,18 @@
    
 </head>
 <body>
+    The result is:
+    <p id="demo1"></p>
     The type of x1 is:
     <p id="demo"></p>
+
     <script>
         let x=BigInt("123456789012345678901234567890");
         let y=BigInt("123456789012345678901234567890") ;
         let z= x+y;
-        document.getElementById("demo").innerHTML= z;
+        document.getElementById("demo1").innerHTML= z;
+        document.getElementById("demo").innerHTML= typeof z;
+        // 24691357802469137802469135780
               
     </script>
    

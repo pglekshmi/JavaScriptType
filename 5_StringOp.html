@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    The string is:
+    <p id="str"></p>
     The length of string is:
     <p id="demo"></p>
-    The character at position 2 is:
+    The character at position 3 is:
     <p id="demo1"></p>
     The second word is:
     <p id="demo2"></p>
@@ -20,16 +22,24 @@
     <p id="demo5"></p>
     Repeat String:
     <p id="demo6"></p>
+    It's me:
+    <p id="str1"></p>
+    Slice it:
+    <p id="str3"></p>
     Replace:
     <p id="demo7"></p>
     Where is icecream:
     <p id="demo8"></p>
+    Each partition:
+    <p id="str4"></p>
     My name is:
     <p id="demo9"></p>
+    <p id="str2"> </p>
     Division:
     <p id="demo10"></p>
     <script>
-        let x= "Mowgli is the human character in Jungle Book."
+        let x= "Mowgli is the human character in Jungle Book.";
+        document.getElementById("str").innerHTML=x;
         document.getElementById("demo").innerHTML=x.length;
         document.getElementById("demo1").innerHTML=x.charAt(2);
         document.getElementById("demo2").innerHTML=x.at(2);
@@ -41,12 +51,20 @@
         let z="How do you do?";
         document.getElementById("demo6").innerHTML=z.repeat(5);
         let l="I like icecreams and i like to sleep";
+        let n= l.slice(2,6);
+        let g= l.slice(20);
+        document.getElementById("str3").innerHTML=g;
+        document.getElementById("str1").innerHTML=l;
         document.getElementById("demo7").innerHTML=l.replace(/like/g,"don't like");
         document.getElementById("demo8").innerHTML=l.search(/icecreams/g);
+        let o="https://www.kba.ai";
+        let myData = o.split(".");
+        document.getElementById("str4").innerHTML=myData;
         let fName="Pranith";
         let lName="Krishna";
         let name = fName+lName
-        document.getElementById("demo9").innerHTML=name;
+        // document.getElementById("demo9").innerHTML=name;
+        document.getElementById("str2").innerHTML=fName.concat(" ",lName);
         let m=10/"Apple";
         document.getElementById("demo10").innerHTML=m;
         
